@@ -1,5 +1,5 @@
 <template>
-  <b-col sm="6">
+  <b-col sm="12" md="6">
     <b-alert show>Comics Number {{comicnum}}</b-alert>
       <img v-if="comics===null" slot="aside" src="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif" width="200" alt="placeholder" />
       <img v-else slot="aside" :src="comics.data.img" width="200" alt="placeholder" />
