@@ -1,6 +1,6 @@
 <template>
   <b-col sm="12">
-    <b-alert show>{{data.data.title}}</b-alert>
+    <b-alert v-if="data" show>{{data.data.title}}</b-alert>
       <img v-if="data===null" slot="aside" src="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif" width="200" alt="placeholder" />
       <img v-else slot="aside" :src="data.data.img" width="600" alt="placeholder" />
     </b-col>
@@ -15,7 +15,7 @@
       }
     },
     async created(){
-      this.data = await service.getComics(1)
+      this.data = await service.getComics(this.$route.params.id)
     }
   }
 </script>

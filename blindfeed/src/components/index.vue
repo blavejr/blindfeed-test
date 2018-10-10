@@ -4,7 +4,7 @@
       <img v-if="comics===null" slot="aside" src="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif" width="200" alt="placeholder" />
       <img v-else slot="aside" :src="comics.data.img" width="200" alt="placeholder" />
       <br>
-      <router-link to="/fullComic/1">See more</router-link>
+      <router-link :to="{ name: 'fullComic', params: {id: comicnum } }">See more</router-link>
   </b-col>
 </template>
 
