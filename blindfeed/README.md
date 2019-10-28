@@ -9,6 +9,8 @@ The app is in vuejs and uses `Axios` for http calls to const server 'https://xkc
 
 Since this project I have used more reactjs and SCSS, but sometimes I still go back to vue, its a nice framework.
 
+live here: https://blindfeed.herokuapp.com/
+
 ## Project setup
 ```
 npm install
